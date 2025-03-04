@@ -8,12 +8,21 @@ $other-color: black;
 $next-color: silver;
 $font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
 
+body {
+  background-color: white;
+  margin: 0;
+  font-family: $font-family;
+  color: $tertiary-color;
+  text-shadow: 2px 2px 4px $other-color;
+  font-size: 1.1rem;
+}
 
 .background-wrapper {
   position: relative;
   overflow: hidden;
+  background-image: url('../assets/background/background-sketch.jpeg');
   background-color: transparent;
- 
+  z-index: 1;
 
   &::before {
     content: "";
@@ -22,10 +31,10 @@ $font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../assets/background/backgroundcollage.png');
-    background-size: 40% auto;
+    background-size: cover;
     background-position: center;
-    filter: grayscale(100%) brightness(98S%) contrast(90%);
+    filter: grayscale(100%) brightness(40%) contrast(50%);
+    opacity: 0.2;
     z-index: -1;
   }
 
@@ -36,30 +45,33 @@ $font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(231, 224, 224, 0.02); 
     z-index: -1;
   }
+}
 
-  .about-info-section {
-    color: $secondary-color !important;
-    text-align: center;
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    
-    h2 {
-      margin-bottom: 20px;
-    }
 
-    p {
-      line-height: 1.6;
-    }
+.about-info-section {
+  color: $tertiary-color;
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  
+  h2 {
+    margin-bottom: 20px;
+    color: $tertiary-color;
+  }
 
-    strong, em {
-      color: $primary-color;
-    }
+  p {
+    line-height: 1.6;
+    color: $tertiary-color;
+  }
+
+  strong, em {
+    color: $primary-color;
   }
 }
+
 
 .grid-section {
   display: grid;
@@ -89,7 +101,7 @@ $font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
 
 .X-info-section {
   text-align: center;
-  color: $secondary-color !important;
+  color: $tertiary-color !important;
 
   h2 {
     margin-bottom: 20px;
@@ -98,7 +110,7 @@ $font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
   p {
     max-width: 800px;
     margin: 0 auto;
-    color: $secondary-color;
+    color: $tertiary-color;
   }
 }
 
@@ -220,6 +232,5 @@ $font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
 
 
 
+
    
-
-

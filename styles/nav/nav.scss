@@ -5,46 +5,69 @@
 
 
 .navbar {
+  color: $tertiary-color !important;
   background-color: $secondary-color;
+  margin-bottom: 0;
   padding: 10px 0;
   text-align: center;
   position: relative;
   z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  color: $tertiary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hero {
+  background-image: url('../assets/header/fatal-attractions.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: $secondary-color !important;
+  padding-top: 5px;
+  padding-bottom: 100px;
+  font-family: $font-family;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.footer {
+  // background-color: $secondary-color;
+  color: red;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
 
   a {
-    color: $tertiary-color;
+    color: red;
     text-decoration: none;
-    margin: 0 20px;
-    font-family: $font-family;
     font-size: 1.2rem;
 
     &:hover {
-      color: $primary-color;
       text-decoration: underline;
+      color: $primary-color;
     }
-  }
-}
-
-.background-wrapper {
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../assets/background/backgroundcollage.png');
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%) brightness(50%);
-    z-index: -1;
-  }
-
-  .about-info-section, .grid-section, .X-info-section, .cover-section {
-    z-index: 1;
   }
 }
 
