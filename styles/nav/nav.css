@@ -74,6 +74,10 @@ body {
   height: auto;
   display: block;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.grid-section .grid-item img:hover {
+  transform: scale(1.1);
 }
 .grid-section .grid-item p {
   margin: 0;
@@ -208,10 +212,16 @@ body {
   margin: 0 auto;
 }
 
-a {
+.navbar a {
   color: red;
   text-decoration: none;
   transition: color 0.3s ease;
+  padding: 10px 15px;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: blue;
 }
 
 .hero {

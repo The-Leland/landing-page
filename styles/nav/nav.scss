@@ -17,10 +17,16 @@
   margin: 0 auto;
 }
 
-a {
+.navbar a {
   color: $tertiary-color;
   text-decoration: none;
   transition: color 0.3s ease;
+  padding: 10px 15px;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: $primary-color;
 }
 
 .hero {
