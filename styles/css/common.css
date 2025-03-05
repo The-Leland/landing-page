@@ -114,6 +114,9 @@ body {
   height: 1in;
   width: auto;
 }
+.cover-section .grid-item img:hover {
+  transform: scale(1.1);
+}
 .cover-section .grid-item:nth-child(1) {
   grid-column: 1;
   grid-row: 1;

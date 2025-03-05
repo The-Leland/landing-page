@@ -135,6 +135,10 @@ body {
       height: 1in;
       width: auto;
     }
+
+    img:hover {
+        transform: scale(1.1);
+      }
   }
 
   .grid-item:nth-child(1) {
